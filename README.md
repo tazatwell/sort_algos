@@ -9,9 +9,6 @@ TO USE:
   File1.dat has random ints from 1 to 5000, and File2.dat has ints from 5000 to 1 in decreasing order (worst- case 
   scenario for most sorts). test2.py is identical except the files include 500000 ints instead of 5000. 
 
-DEVELOPMENT:
-  More sorting algorithms (mergesort, bubblesort, radix sort), as well as choosing custom shell's increments.
-  
 SPECIAL THANKS:
   Sean Davis, UC Davis Computer Science, created a timetest for comparing insertion and deletion times of various ADTs,
   for a Data Structures assignment. Sorts.cpp is derived from Sean's timetest.cpp but was modfied to include different
