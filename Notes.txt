@@ -1,0 +1,6 @@
+NOTES.txt: Design Notes 
+Additional room for improvement:
+	1. Need to do more extensive testing of insertionSort, shellsort, heapSort.
+	2. Could not get mergeSort to work yet.
+	3. Need to understand shellsort, heapsort, and mergesort more. Want to be able to code all sorts without reference.
+	4. To finish: Need quicksort, radix sort, bubble sort?
