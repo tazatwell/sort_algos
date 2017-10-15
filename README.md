@@ -13,3 +13,7 @@ SPECIAL THANKS:
   Sean Davis, UC Davis Computer Science, created a timetest for comparing insertion and deletion times of various ADTs,
   for a Data Structures assignment. Sorts.cpp is derived from Sean's timetest.cpp but was modfied to include different
   functions and files for sorting vectors instead of adt insertion and deletion. No other files share resemblance.
+
+CONDUCT:
+  All are welcome to contribute to this project. Issues that need to be fixed are viewable on the Issues tab. All who
+  work on this project must follow the code of conduct viewable in the root repository.
