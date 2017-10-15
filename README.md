@@ -1,5 +1,6 @@
 # sort_algos
 Timed tests displaying performance times of various sorting algorithms.
+
 TO USE:
   Sorts.cpp is the driver program, taking what type of sort and what file as input. Displays CPU Time after performing
   the sort. Heapsort.cpp, Insertionsort.cpp, Shellsort.cpp, and Quicksort.cpp only have one function, which is called
