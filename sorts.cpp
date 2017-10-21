@@ -5,6 +5,7 @@
 #include "shellsort.cpp"
 #include "heapsort.cpp"
 #include "quicksort.cpp"
+#include "mergesort.cpp"
 
 using namespace std;
 
@@ -19,11 +20,12 @@ int getChoice(int *size, int *M, int *L)
     cout << "\n      ADT Menu\n0. Quit\n1.  Insertion Sort\n";
     cout << "2.  Shell Sort\n3.  Heap Sort\n";
     cout << "4.  Quick Sort\n";
+    cout << "5.  Merge Sort\n";
     cout << "Your choice >> ";
     cin >> choice;
-    if(choice < 0 || choice > 4)
-      cout << "Your choice is not between 1 and 4.\nPlease try again.\n";
-  } while (choice < 0 || choice > 4);
+    if(choice < 0 || choice > 5)
+      cout << "Your choice is not between 1 and 5.\nPlease try again.\n";
+  } while (choice < 0 || choice > 5);
   
 	return choice;
 } // getChoice()
@@ -104,7 +106,17 @@ void RunQuickSort(char *filename)
 	cout << vec[vec.size() - 1] << endl;  */
 } // RunList()
 
-
+void RunMergeSort(char *filename)
+{
+  std::vector<int> vec;
+  ifstream inf(filename);
+  int i;
+  while(inf >> i)
+  {
+    vec.push_back(i);
+  }
+  vec = mergeSortDriver(vec);
+}
 
 int main(){
   char filename[80];
@@ -139,6 +151,7 @@ int main(){
       case 2: RunShellSort(filename); break;
       case 3: RunHeapSort(filename); break;
       case 4: RunQuickSort(filename); break;
+      case 5: RunMergeSort(filename); break;
     }
 
     cout << "CPU time: " << ct.cur_CPUTime() << endl;
