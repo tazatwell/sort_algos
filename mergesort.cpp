@@ -15,13 +15,14 @@ void merge(vector<int> &a, vector<int> &tempArray, int leftPos, int rightPos, in
 			tempArray[tempPos++] = a[leftPos++];
 		else
 			tempArray[tempPos++] = a[rightPos++];
-		while (leftPos <= leftEnd) 
-			tempArray[tempPos++] = a[leftPos++];
-		while (rightPos <= rightEnd) 
-			tempArray[tempPos++] = a[rightPos++];
-		for (int i = 0; i < numElements; i++, --rightEnd)
-			a[rightEnd] = tempArray[rightEnd];		
 	}
+
+	while (leftPos <= leftEnd)
+		tempArray[tempPos++] = a[leftPos++];
+	while (rightPos <= rightEnd)
+		tempArray[tempPos++] = a[rightPos++];
+	for (int i = 0; i < numElements; i++, --rightEnd)
+		a[rightEnd] = tempArray[rightEnd];
 }
 
 
@@ -41,10 +42,10 @@ vector<int> mergeSortDriver(vector<int> a) {
 	vector<int> tempArray(a.size());
 	mergeSort(a, tempArray, 0, a.size() - 1);
 	return a;
-}  
+}
 
 
-
+/*
 int main() {
 	std::vector<int> ar;
 	int x = 32;
@@ -54,8 +55,8 @@ int main() {
 	ar.insert(ar.begin() + 3, 22);
 	ar.insert(ar.begin() + 4, 28);
 	ar.insert(ar.begin() + 5, 2);
-	ar.insert(ar.begin() + 6, 14);	
-	ar.insert(ar.begin() + 7, 1);	
+	ar.insert(ar.begin() + 6, 14);
+	ar.insert(ar.begin() + 7, 1);
 	for (int i = 0; i < ar.size(); i++) {
 		std::cout << ar[i] << " ";
 	}
@@ -66,4 +67,4 @@ int main() {
 	}
 	std::cout << std::endl;
 
-}
+} */
